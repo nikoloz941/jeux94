@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de parcours médiéval</title>
+    <link rel="stylesheet" href="tp1/style2.css">
+</head>
+<body>
+    <h1>Choisissez votre personnage</h1>
+    <div class="characters">
+        <div class="character" onclick="chooseCharacter('chevalier')">
+            <img src="chevalier.png" alt="Chevalier">
+            <p>Chevalier - Courageux et fort</p>
+        </div>
+        <div class="character" onclick="chooseCharacter('archer')">
+            <img src="archer.png" alt="Archer">
+            <p>Archer - Rapide et précis</p>
+        </div>
+    </div>
+
+    <script src="tp1/script.js"></script>
+    <label for="difficulty">Choisissez la difficulté :</label>
+<select id="difficulty" onchange="setDifficulty()">
+    <option value="1">Facile</option>
+    <option value="2">Moyen</option>
+    <option value="3">Difficile</option>
+</select>
+
+<script>
+function setDifficulty() {
+    const select = document.getElementById('difficulty');
+    difficultyLevel = parseInt(select.value);
+    setupGameDifficulty();  // Reconfigurer le jeu en fonction de la nouvelle difficulté
+}
+</script>
+
+</body>
+</html>
