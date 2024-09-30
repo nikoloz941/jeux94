@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de parcours médiéval</title>
+    <link rel="stylesheet" href="emma/style.css">
+</head>
+<body>
+    <h1>Choisissez votre personnage</h1>
+    <div class="characters">
+        <div class="character" onclick="chooseCharacter('chevalier')">
+            <img src="emma/img/chevalier.jpg.png" alt="Chevalier">
+            <p><h1>Nikoloz</h1> Est un guerrier noble et courageux, vêtu d'une armure étincelante qui reflète la lumière du soleil. <br> Ses boucles d'or scintillent au soleil, tandis que ses yeux émeraudes reflètent la sagesse et la détermination. <br> Doté d'une grâce naturelle, il inspire la loyauté et l'admiration de tous ceux qui croisent son chemin. Sa prestance et son charisme en font un leader exceptionnel, prêt à défendre les opprimés et à restaurer l'honneur de son royaume.
+
+            </p>
+        </div>
+        <div class="character" onclick="chooseCharacter('archer')">
+            <img src="emma/img/archère.jpg.png" alt="Archer">
+            <p> <h1>Emma</h1> Est une silhouette énigmatique, vêtue d'une armure d'un noir profond qui reflète la lumière de la lune. <br> Ses cheveux de jais tombent en cascade autour de son visage, ajoutant à son allure mystérieuse. <br> Poète dans l'âme, elle manie les mots avec autant d'habileté que son arc, créant des vers qui touchent le cœur. Musicienne aguerrie, ses mélodies résonnent dans les bois, captivant ceux qui l'écoutent. Elle incarne la force et la sensibilité, prête à défendre son royaume avec grâce et détermination.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <label for="difficulty">Choisissez la difficulté :</label>
+<select id="difficulty" onchange="setDifficulty()">
+    <option value="1">Facile</option>
+    <option value="2">Moyen</option>
+    <option value="3">Difficile</option>
+</select>
+
+<script>
+function setDifficulty() {
+    const select = document.getElementById('difficulty');
+    difficultyLevel = parseInt(select.value);
+    setupGameDifficulty();  // Reconfigurer le jeu en fonction de la nouvelle difficulté
+}
+</script>
+
+</body>
+</html>

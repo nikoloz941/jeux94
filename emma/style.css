@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.character {
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.character img {
+    width: 150px;
+    height: auto;
+}
+
+.character p {
+    font-weight: bold;
+}
+
+.character:hover {
+    transform: scale(1.1);
+}
+body {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    background-color: #87CEEB; /* Un ciel bleu pour le jeu */
+    border: 2px solid #000;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #333;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espace entre les personnages */
+}
+
+.character {
+    background-color: #fff;
+    border: 2px solid #3498db; /* Couleur de la bordure */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Largeur fixe pour les personnages */
+    transition: transform 0.3s;
+}
+
+.character:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.character img {
+    width: 100%; /* L'image s'ajuste à la largeur de son conteneur */
+    border-radius: 10px; /* Coins arrondis pour les images */
+}
+
+.character p {
+    font-size: 14px; /* Taille de police pour la description */
+    line-height: 1.5; /* Hauteur de ligne pour plus d'espace */
+    margin: 15px 0 0 0; /* Marge pour espacer la description */
+}
+
+label {
+    display: block; /* Pour afficher le label sur une nouvelle ligne */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3498db;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2980b9; /* Changer la couleur de la bordure au focus */
+}
